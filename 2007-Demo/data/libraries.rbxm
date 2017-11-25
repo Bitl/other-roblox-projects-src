@@ -1,0 +1,52 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="LocalScript" referent="RBX2576">
+		<Properties>
+			<bool name="Disabled">false</bool>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">MOTD</string>
+			<string name="Source">local w = game:service(&quot;HtmlService&quot;):NewWindow()&#13;&#10;&#13;&#10;w.DocumentComplete:connect(function ()&#13;&#10;&#9;w:SetBody([==[&#13;&#10;&#9;&lt;table width=&quot;420&quot; height=&quot;190&quot; border=&quot;0&quot;&gt;&#13;&#10;&#9;  &lt;tr&gt;&#13;&#10;&#9;    &lt;td width=&quot;490&quot; bgcolor=&quot;#FFFFFF&quot;&gt;&lt;font color=&quot;#000000&quot;&gt; &#13;&#10;&#9;      &lt;/font&gt;&lt;div align=&quot;center&quot;&gt;&#13;&#10;&#9;&#9;&#9;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;ROBLOX Virtual Playworld&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&#13;&#10;&#9;&#9;&#9;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;ROBLOX is Free!&lt;/font&gt;&lt;/p&gt;&#13;&#10;&#9;&#9;&#9;&lt;br&gt;&#13;&#10;&#9;&#9;&#9;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Build your personal Place&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&#13;&#10;&#9;&#9;&#9;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;Create buildings, vehicles, scenery, and traps with thousands of virtual bricks.&lt;/font&gt;&lt;/p&gt;&#13;&#10;&#9;&#9;&#9;&lt;br&gt;&#13;&#10;&#9;&#9;&#9;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Meet new friends online&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&#13;&#10;&#9;&#9;&#9;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;Visit your friend&apos;s place, chat in 3D, and build together.&lt;/font&gt;&lt;/p&gt;&#13;&#10;&#9;&#9;&#9;&lt;br&gt;&#13;&#10;&#9;&#9;&#9;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Battle in the Brick Arenas&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&#13;&#10;&#9;&#9;&#9;&lt;p&gt;&lt;font color=&quot;#000000&quot;&gt;Play with the slingshot, rocket, or other brick battle tools. Be careful not to get &quot;bloxxed&quot;.&lt;/font&gt;&lt;/p&gt;&#13;&#10;&#9;      &lt;/div&gt;&#13;&#10;&#9;    &lt;/td&gt;&#13;&#10;&#9;  &lt;/tr&gt;&#13;&#10;&#9;&lt;/table&gt;&#13;&#10;]==])&#13;&#10;&#9;&#13;&#10;&#9;w:Show()&#13;&#10;end)&#13;&#10;&#13;&#10;w:Navigate()</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="BodyColors" referent="RBX2577">
+		<Properties>
+			<int name="HeadColor">226</int>
+			<int name="LeftArmColor">226</int>
+			<int name="LeftLegColor">23</int>
+			<string name="Name">Colors</string>
+			<int name="RightArmColor">226</int>
+			<int name="RightLegColor">23</int>
+			<int name="TorsoColor">28</int>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Script" referent="RBX2578">
+		<Properties>
+			<bool name="Disabled">false</bool>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">TimeOfDay</string>
+			<string name="Source">minutesAfterMidnight = 0&#13;&#10;while true do&#13;&#10;&#9;minutesAfterMidnight = minutesAfterMidnight + 0.5&#13;&#10;&#9;game.Lighting:SetMinutesAfterMidnight(minutesAfterMidnight)&#13;&#10;&#9;wait(0.1)&#13;&#10;end</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Script" referent="RBX2579">
+		<Properties>
+			<bool name="Disabled">false</bool>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">Respawn</string>
+			<string name="Source">while true do &#13;&#10;&#9;wait(0.001)&#13;&#10;&#9;if (game.Players.Player.Character ~= nil) then&#13;&#10;&#9;&#9;if (Player.Character.Humanoid.Health == 0) then&#13;&#10;&#9;&#9;&#9;wait(5)&#13;&#10;&#9;&#9;&#9;game.Players.Player:LoadCharacter()&#13;&#10;&#9;&#9;&#9;local Colors = game.Workspace.Colors:Clone()&#13;&#10;&#9;&#9;&#9;Colors.Parent = game.Players.Player.Character&#13;&#10;&#9;&#9;elseif (game.Players.Player.Character.Parent == nil) then &#13;&#10;&#9;&#9;&#9;wait(5)&#13;&#10;&#9;&#9;&#9;game.Players.Player:LoadCharacter()&#13;&#10;&#9;&#9;&#9;local Colors = game.Workspace.Colors:Clone()&#13;&#10;&#9;&#9;&#9;Colors.Parent = game.Players.Player.Character&#13;&#10;&#9;&#9;end&#13;&#10;&#9;end&#13;&#10;end</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+	<Item class="Script" referent="RBX0">
+		<Properties>
+			<bool name="Disabled">false</bool>
+			<Content name="LinkedSource"><null></null></Content>
+			<string name="Name">ResetCommand</string>
+			<string name="Source">function onChatted(msg, speaker)&#10;    &#10;    source = string.lower(speaker.Name)&#10;    msg = string.lower(msg)&#10;    -- Note: This one is NOT caps sensitive&#10;&#10;    if msg == &quot;!!!reset&quot; then&#10;        speaker.Character.Humanoid.Health = 0&#10;    end&#10;end&#10;&#10;function onPlayerEntered(newPlayer)&#10;        newPlayer.Chatted:connect(function(msg) onChatted(msg, newPlayer) end) &#10;end&#10; &#10;game.Players.ChildAdded:connect(onPlayerEntered)</string>
+			<bool name="archivable">true</bool>
+		</Properties>
+	</Item>
+</roblox>
