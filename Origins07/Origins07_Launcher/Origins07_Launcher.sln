@@ -1,0 +1,15 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Origins07_Launcher", "Origins07_Launcher\Origins07_Launcher.csproj", "{5B8B96E3-7332-4A5C-BEAE-4EAAE0216841}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Launcher|Any CPU = Launcher|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B8B96E3-7332-4A5C-BEAE-4EAAE0216841}.Launcher|Any CPU.Build.0 = Release|Any CPU
+		{5B8B96E3-7332-4A5C-BEAE-4EAAE0216841}.Launcher|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

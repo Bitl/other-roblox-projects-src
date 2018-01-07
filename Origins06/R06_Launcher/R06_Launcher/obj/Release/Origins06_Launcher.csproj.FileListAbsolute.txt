@@ -1,6 +1,0 @@
-C:\Users\BITL\Documents\SharpDevelop Projects\R06_Launcher\R06_Launcher\obj\Release\Origins06_Launcher.csprojResolveAssemblyReference.cache
-C:\Users\BITL\Documents\SharpDevelop Projects\R06_Launcher\R06_Launcher\obj\Release\Origins06_Launcher.MainForm.resources
-C:\Users\BITL\Documents\SharpDevelop Projects\R06_Launcher\R06_Launcher\obj\Release\Origins06_Launcher.NameForm.resources
-C:\Users\BITL\Documents\SharpDevelop Projects\R06_Launcher\R06_Launcher\obj\Release\Origins06_Launcher.csproj.GenerateResource.Cache
-C:\Users\BITL\Documents\SharpDevelop Projects\R06_Launcher\R06_Launcher\bin\Release\Origins06_Launcher.exe
-C:\Users\BITL\Documents\SharpDevelop Projects\R06_Launcher\R06_Launcher\obj\Release\Origins06_Launcher.exe
