@@ -58,6 +58,13 @@ $url = "Origins06://".$encryptstring;
 echo "<form action='".$url."'>";
 echo "<div id='JoinButton'><input type='submit' value='Join'/></div>";
 echo "</form>";
+$ip = base64_decode($row['ip']);
+if($_SERVER['REMOTE_ADDR'] == $ip)
+{
+echo "<form action='removeserver.php'>";
+echo "<div id='DeleteButton'><input type='submit' value='Delete'/></div>";
+echo "</form>";
+}
 echo "</center>";
 echo "</div>";
 echo " "; 
